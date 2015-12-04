@@ -30,12 +30,13 @@ body {
   text-decoration: none;
   text-shadow: none;
   z-index: 100;
-  left: 0;
   position: fixed;
+  top: 0;
+  left: 0;
   right: 0;
 }
 
-/* line 33, style.scss */
+/* line 34, style.scss */
 .topwr {
   max-width: 1546px;
   margin-left: auto;
@@ -49,13 +50,13 @@ body {
   clear: both;
 }
 @media (max-width: 600px) {
-  /* line 33, style.scss */
+  /* line 34, style.scss */
   .topwr {
     padding: 0 3.44828%;
   }
 }
 
-/* line 41, style.scss */
+/* line 42, style.scss */
 .logo {
   width: 23.72881%;
   float: left;
@@ -64,13 +65,13 @@ body {
   float: left;
 }
 
-/* line 47, style.scss */
+/* line 48, style.scss */
 .logo a {
   float: left;
   max-width: 204px;
 }
 
-/* line 52, style.scss */
+/* line 53, style.scss */
 .menus {
   width: 66.10169%;
   float: left;
@@ -78,13 +79,13 @@ body {
   padding: 15px 0 0 0;
 }
 @media (max-width: 870px) {
-  /* line 52, style.scss */
+  /* line 53, style.scss */
   .menus {
     display: none;
   }
 }
 
-/* line 60, style.scss */
+/* line 61, style.scss */
 .menus a {
   color: #2f3030;
   font-size: 14px;
@@ -95,7 +96,7 @@ body {
   float: left;
 }
 
-/* line 70, style.scss */
+/* line 71, style.scss */
 .menus a:hover {
   color: #000;
   text-decoration: none;
@@ -104,7 +105,7 @@ body {
   text-shadow: 1px 1px 1px #fff !important;
 }
 
-/* line 78, style.scss */
+/* line 79, style.scss */
 a.active {
   background-color: #c92220;
   background-image: linear-gradient(to bottom, #ec4947, #c92220);
@@ -115,14 +116,13 @@ a.active {
   text-shadow: 1px 1px 1px #600100;
 }
 
-/* line 88, style.scss */
+/* line 89, style.scss */
 .all {
   max-width: 1546px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.69492%;
   margin-top: 75px;
-  float: left;
 }
 /* line 12, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
 .all:after {
@@ -131,7 +131,7 @@ a.active {
   clear: both;
 }
 @media (max-width: 600px) {
-  /* line 88, style.scss */
+  /* line 89, style.scss */
   .all {
     padding: 0 3.44828%;
   }
@@ -217,6 +217,7 @@ h2 {
 
 /* line 162, style.scss */
 .wells:nth-of-type(3) {
+  width: 32.20339%;
   float: right;
   margin-right: 0;
   background: #4882a6;
@@ -272,18 +273,6 @@ h3 {
 }
 
 /* line 204, style.scss */
-h4 {
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 26px;
-  margin: 0 0 10px 0;
-  padding: 0;
-  float: left;
-  width: 100%;
-}
-
-/* line 215, style.scss */
 h5 {
   color: #555;
   font-size: 24px;
@@ -295,7 +284,7 @@ h5 {
   width: 100%;
 }
 
-/* line 226, style.scss */
+/* line 215, style.scss */
 h6 {
   color: #333;
   font-size: 16px;
@@ -305,4 +294,85 @@ h6 {
   padding: 0;
   float: left;
   width: 100%;
+}
+
+/* line 225, style.scss */
+.allproducts {
+  margin-top: 1.69492%;
+  float: left;
+}
+
+/* line 229, style.scss */
+.wellsProd {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  background-color: #efedee;
+  color: #000;
+  font-size: 15px;
+  font-weight: normal;
+  min-height: 140px;
+  padding: 20px 5px 10px;
+  margin-bottom: 1px;
+}
+
+/* line 240, style.scss */
+.wellsProd:nth-last-child(1) {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 243, style.scss */
+.wellsProd:nth-last-child(4) {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 247, style.scss */
+.wellsProd:hover {
+  background: #bdd7ee;
+  cursor: pointer;
+}
+
+/* line 251, style.scss */
+.wellsProd i {
+  margin-top: 30px;
+}
+
+/* line 257, style.scss */
+.icont {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 262, style.scss */
+h4 {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  padding-right: 5.26316%;
+  float: left;
+  width: 100%;
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 275, style.scss */
+.wellsProd span {
+  width: 74.57627%;
+  float: right;
+  margin-right: 0;
+  padding: 0 5.26316% 3.44828% 0;
+  /*	@include susy-media(max-width 1050px){
+  		@include span(8 at 5);
+  	}*/
 }

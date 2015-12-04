@@ -25,8 +25,9 @@ body {
 	text-decoration: none;
 	text-shadow: none;
 	z-index: 100;
-	left: 0;
 	position: fixed;
+	top: 0;
+	left: 0;
 	right: 0;
 }
 
@@ -89,7 +90,6 @@ a.active {
 	@include container($mw);
 	padding: 0 gutter();
 	margin-top: 75px;
-	float: left;
 	@include susy-media(max-width 600px){
 		padding: 0 gutter(6);
 	}
@@ -160,7 +160,7 @@ h2 {
 }
 
 .wells:nth-of-type(3) {
-	@include span(last);
+	@include span(4 last);
 	background: #4882a6;
 }
 
@@ -201,17 +201,6 @@ h3 {
 	font-weight: 500;
 }
 
-h4 {
-	color: #333;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 26px;
-	margin: 0 0 10px 0;
-	padding: 0;
-	float: left;
-	width: 100%;
-}
-
 h5 {
 	color: #555;
 	font-size: 24px;
@@ -232,4 +221,61 @@ h6 {
 	padding: 0;
 	float: left;
 	width: 100%;
+}
+.allproducts {
+	margin-top:gutter();
+	float: left;
+}
+.wellsProd {
+	@include span(4);
+	background-color: #efedee;
+	color: #000;
+	font-size: 15px;
+	font-weight: normal;
+	min-height: 140px;
+	padding: 20px 5px 10px;
+	margin-bottom:1px;
+}
+
+.wellsProd:nth-last-child(1) {
+	@include span(4 last);
+}
+.wellsProd:nth-last-child(4) {
+	@include span(4 last);
+}
+
+.wellsProd:hover {
+	background: #bdd7ee;
+	cursor: pointer;
+}
+.wellsProd i {
+	margin-top: 30px;
+
+
+}
+
+.icont {
+	@include span(3);
+	padding:0;
+	text-align: center;
+}
+h4 {
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	padding-right:gutter(4);
+	float: left;
+	width: 100%;
+	@include span(9 at 4);
+
+}
+.wellsProd span {
+	@include span(9 at 4);
+	padding:0 gutter(4) gutter(6) 0;
+/*	@include susy-media(max-width 1050px){
+		@include span(8 at 5);
+	}*/
 }
