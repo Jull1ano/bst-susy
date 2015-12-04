@@ -1,0 +1,59 @@
+// Screen
+// ======
+@import "grids";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,latin-ext);
+
+$ros: #c92220;
+$ov: #841e5f;
+$mw: 1546px;
+
+body {
+  font-family: "Roboto", "Open sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.navTopFixed {
+  background-color: #ededed;
+  background-image: linear-gradient(to bottom, #fff, #ededed);
+  border-bottom: 1px solid #aaa;
+  min-height: 75px;
+  opacity: 1;
+  text-decoration: none;
+  text-shadow: none;
+  z-index: 100;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+.all {
+  @include container($mw);
+}
+.logo {
+  padding: 10px 0 0 0;
+  float: left;
+}
+h1 {
+  font-size: 29px;
+  line-height: 32px;
+  padding: 15px 0 15px;
+  color: $ros;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+
+}
+
+h2 {
+  color: #444;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 10px 0 20px;
+  padding: 0;
+  float: left;
+  width: 100%;
+}

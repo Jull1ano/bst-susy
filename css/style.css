@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,latin-ext);
+/* line 11, style.scss */
+body {
+  font-family: "Roboto", "Open sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, style.scss */
+.navTopFixed {
+  background-color: #ededed;
+  background-image: linear-gradient(to bottom, #fff, #ededed);
+  border-bottom: 1px solid #aaa;
+  min-height: 75px;
+  opacity: 1;
+  text-decoration: none;
+  text-shadow: none;
+  z-index: 100;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+/* line 31, style.scss */
+.all {
+  max-width: 1546px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+.all:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 34, style.scss */
+.logo {
+  padding: 10px 0 0 0;
+  float: left;
+}
+
+/* line 38, style.scss */
+h1 {
+  font-size: 29px;
+  line-height: 32px;
+  padding: 15px 0 15px;
+  color: #c92220;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+}
+
+/* line 49, style.scss */
+h2 {
+  color: #444;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 10px 0 20px;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
