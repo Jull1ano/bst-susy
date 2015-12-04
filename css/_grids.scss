@@ -7,3 +7,13 @@ $susy: (
   columns: 12,
   gutters: 1/4,
 );
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	vertical-align: middle;
+	border: 0 none;
+}
+

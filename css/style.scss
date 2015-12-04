@@ -9,51 +9,227 @@ $ov: #841e5f;
 $mw: 1546px;
 
 body {
-  font-family: "Roboto", "Open sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0;
-  padding: 0;
+	font-family: "Roboto", "Open sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
 }
+
 .navTopFixed {
-  background-color: #ededed;
-  background-image: linear-gradient(to bottom, #fff, #ededed);
-  border-bottom: 1px solid #aaa;
-  min-height: 75px;
-  opacity: 1;
-  text-decoration: none;
-  text-shadow: none;
-  z-index: 100;
-  left: 0;
-  position: fixed;
-  right: 0;
+	background-color: #ededed;
+	background-image: linear-gradient(to bottom, #fff, #ededed);
+	border-bottom: 1px solid #aaa;
+	min-height: 75px;
+	opacity: 1;
+	text-decoration: none;
+	text-shadow: none;
+	z-index: 100;
+	left: 0;
+	position: fixed;
+	right: 0;
 }
-.all {
-  @include container($mw);
+
+.topwr {
+	@include container($mw);
+	padding: 0 gutter();
+	@include susy-media(max-width 600px){
+		padding: 0 gutter(6);
+	}
 }
+
 .logo {
-  padding: 10px 0 0 0;
-  float: left;
+	@include span(3);
+	padding: 10px 0 0 0;
+	float: left;
 }
+
+.logo a {
+	float: left;
+	max-width: 204px;
+}
+
+.menus {
+	@include span(8);
+	padding: 15px 0 0 0;
+	@media (max-width: 870px) {
+		display: none;
+	}
+}
+
+.menus a {
+	color: #2f3030;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	float: left;
+}
+
+.menus a:hover {
+	color: #000;
+	text-decoration: none;
+	background-color: #ccc;
+	background-image: linear-gradient(to bottom, #ddd, #bbb);
+	text-shadow: 1px 1px 1px #fff !important;
+}
+
+a.active {
+	background-color: $ros;
+	background-image: linear-gradient(to bottom, #ec4947, $ros);
+	border-radius: 0;
+	box-shadow: none;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #600100
+}
+
+.all {
+	@include container($mw);
+	padding: 0 gutter();
+	margin-top: 75px;
+	float: left;
+	@include susy-media(max-width 600px){
+		padding: 0 gutter(6);
+	}
+}
+
+a.lb {
+	@include span(1 last);
+	color: #333;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	float: left;
+	padding: 25px 0 0 0;
+	text-decoration: none;
+
+}
+
+a.lb:hover {
+	color: $ros;
+
+}
+
+a.lb img {
+	margin: -3px 5px 0 0;
+}
+
 h1 {
-  font-size: 29px;
-  line-height: 32px;
-  padding: 15px 0 15px;
-  color: $ros;
-  font-weight: bold;
-  float: left;
-  width: 100%;
+	font-size: 29px;
+	line-height: 32px;
+	padding: 7px 0 0px;
+	color: $ros;
+	font-weight: bold;
+	float: left;
+	width: 100%;
 
 }
 
 h2 {
-  color: #444;
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  margin: 10px 0 20px;
-  padding: 0;
-  float: left;
-  width: 100%;
+	color: #444;
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 26px;
+	margin: 10px 0 20px;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+.wells {
+	@include span(4);
+	color: #fff;
+	float: left;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	min-height: 140px;
+	padding: 0;
+	margin-bottom: 1px;
+	background-color: #777;
+	@include susy-media(max-width 600px) {
+		@include span(12);
+	}
+}
+
+.wells:nth-of-type(2) {
+	background: #0b82be;
+}
+
+.wells:nth-of-type(3) {
+	@include span(last);
+	background: #4882a6;
+}
+
+.wells:hover {
+	background-color: $ros;
+	cursor: pointer;
+}
+
+.texts {
+	@include span(10);
+	padding-top: gutter(4);
+	padding-bottom: gutter(4);
+}
+
+.imag {
+	@include span(2 last);
+}
+
+.wells img {
+	float: right;
+	margin-left: 20px;
+	max-width: 45px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.inwell {
+	padding: gutter(4);
+}
+
+h3 {
+	@include span(10);
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 24px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: 500;
+}
+
+h4 {
+	color: #333;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+h5 {
+	color: #555;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 22px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+h6 {
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	float: left;
+	width: 100%;
 }

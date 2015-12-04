@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,latin-ext);
+/* line 11, _grids.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, _grids.scss */
+img {
+  vertical-align: middle;
+  border: 0 none;
+}
+
 /* line 11, style.scss */
 body {
   font-family: "Roboto", "Open sans", "Trebuchet MS", Helvetica, Arial, sans-serif;
@@ -9,7 +20,7 @@ body {
   padding: 0;
 }
 
-/* line 18, style.scss */
+/* line 19, style.scss */
 .navTopFixed {
   background-color: #ededed;
   background-image: linear-gradient(to bottom, #fff, #ededed);
@@ -24,37 +35,144 @@ body {
   right: 0;
 }
 
-/* line 31, style.scss */
+/* line 33, style.scss */
+.topwr {
+  max-width: 1546px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.69492%;
+}
+/* line 12, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+.topwr:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (max-width: 600px) {
+  /* line 33, style.scss */
+  .topwr {
+    padding: 0 3.44828%;
+  }
+}
+
+/* line 41, style.scss */
+.logo {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 10px 0 0 0;
+  float: left;
+}
+
+/* line 47, style.scss */
+.logo a {
+  float: left;
+  max-width: 204px;
+}
+
+/* line 52, style.scss */
+.menus {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  padding: 15px 0 0 0;
+}
+@media (max-width: 870px) {
+  /* line 52, style.scss */
+  .menus {
+    display: none;
+  }
+}
+
+/* line 60, style.scss */
+.menus a {
+  color: #2f3030;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: left;
+}
+
+/* line 70, style.scss */
+.menus a:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: #ccc;
+  background-image: linear-gradient(to bottom, #ddd, #bbb);
+  text-shadow: 1px 1px 1px #fff !important;
+}
+
+/* line 78, style.scss */
+a.active {
+  background-color: #c92220;
+  background-image: linear-gradient(to bottom, #ec4947, #c92220);
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #600100;
+}
+
+/* line 88, style.scss */
 .all {
   max-width: 1546px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1.69492%;
+  margin-top: 75px;
+  float: left;
 }
-/* line 12, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
 .all:after {
   content: " ";
   display: block;
   clear: both;
 }
-
-/* line 34, style.scss */
-.logo {
-  padding: 10px 0 0 0;
-  float: left;
+@media (max-width: 600px) {
+  /* line 88, style.scss */
+  .all {
+    padding: 0 3.44828%;
+  }
 }
 
-/* line 38, style.scss */
+/* line 98, style.scss */
+a.lb {
+  width: 6.77966%;
+  float: right;
+  margin-right: 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  float: left;
+  padding: 25px 0 0 0;
+  text-decoration: none;
+}
+
+/* line 110, style.scss */
+a.lb:hover {
+  color: #c92220;
+}
+
+/* line 115, style.scss */
+a.lb img {
+  margin: -3px 5px 0 0;
+}
+
+/* line 119, style.scss */
 h1 {
   font-size: 29px;
   line-height: 32px;
-  padding: 15px 0 15px;
+  padding: 7px 0 0px;
   color: #c92220;
   font-weight: bold;
   float: left;
   width: 100%;
 }
 
-/* line 49, style.scss */
+/* line 130, style.scss */
 h2 {
   color: #444;
   font-family: "Open Sans";
@@ -62,6 +180,128 @@ h2 {
   font-weight: bold;
   line-height: 26px;
   margin: 10px 0 20px;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 142, style.scss */
+.wells {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  color: #fff;
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  min-height: 140px;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #777;
+}
+@media (max-width: 600px) {
+  /* line 142, style.scss */
+  .wells {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* line 158, style.scss */
+.wells:nth-of-type(2) {
+  background: #0b82be;
+}
+
+/* line 162, style.scss */
+.wells:nth-of-type(3) {
+  float: right;
+  margin-right: 0;
+  background: #4882a6;
+}
+
+/* line 167, style.scss */
+.wells:hover {
+  background-color: #c92220;
+  cursor: pointer;
+}
+
+/* line 172, style.scss */
+.texts {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  padding-top: 5.26316%;
+  padding-bottom: 5.26316%;
+}
+
+/* line 178, style.scss */
+.imag {
+  width: 15.25424%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 182, style.scss */
+.wells img {
+  float: right;
+  margin-left: 20px;
+  max-width: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 190, style.scss */
+.inwell {
+  padding: 5.26316%;
+}
+
+/* line 194, style.scss */
+h3 {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* line 204, style.scss */
+h4 {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 215, style.scss */
+h5 {
+  color: #555;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 22px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 226, style.scss */
+h6 {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0 0 20px 0;
   padding: 0;
   float: left;
   width: 100%;
