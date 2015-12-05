@@ -43,7 +43,7 @@ body {
   margin-right: auto;
   padding: 0 1.69492%;
 }
-/* line 12, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
 .topwr:after {
   content: " ";
   display: block;
@@ -124,7 +124,7 @@ a.active {
   padding: 0 1.69492%;
   margin-top: 75px;
 }
-/* line 12, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.6/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
 .all:after {
   content: " ";
   display: block;
@@ -137,7 +137,7 @@ a.active {
   }
 }
 
-/* line 98, style.scss */
+/* line 99, style.scss */
 a.lb {
   width: 6.77966%;
   float: right;
@@ -151,17 +151,17 @@ a.lb {
   text-decoration: none;
 }
 
-/* line 110, style.scss */
+/* line 111, style.scss */
 a.lb:hover {
   color: #c92220;
 }
 
-/* line 115, style.scss */
+/* line 116, style.scss */
 a.lb img {
   margin: -3px 5px 0 0;
 }
 
-/* line 119, style.scss */
+/* line 120, style.scss */
 h1 {
   font-size: 29px;
   line-height: 32px;
@@ -172,7 +172,7 @@ h1 {
   width: 100%;
 }
 
-/* line 130, style.scss */
+/* line 131, style.scss */
 h2 {
   color: #444;
   font-family: "Open Sans";
@@ -185,7 +185,7 @@ h2 {
   width: 100%;
 }
 
-/* line 142, style.scss */
+/* line 143, style.scss */
 .wells {
   width: 32.20339%;
   float: left;
@@ -195,57 +195,88 @@ h2 {
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  min-height: 140px;
   padding: 0;
   margin-bottom: 1px;
   background-color: #777;
+  display: table;
 }
 @media (max-width: 600px) {
-  /* line 142, style.scss */
+  /* line 143, style.scss */
   .wells {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 5.26316%;
+    padding-bottom: 5.26316%;
+  }
+}
+@media (min-width: 601px) and (max-width: 750px) {
+  /* line 143, style.scss */
+  .wells {
+    height: 300px;
+  }
+}
+@media (min-width: 751px) and (max-width: 850px) {
+  /* line 143, style.scss */
+  .wells {
+    height: 260px;
+  }
+}
+@media (min-width: 851px) and (max-width: 1039px) {
+  /* line 143, style.scss */
+  .wells {
+    height: 220px;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 143, style.scss */
+  .wells {
+    height: 190px;
   }
 }
 
-/* line 158, style.scss */
+/* line 174, style.scss */
 .wells:nth-of-type(2) {
   background: #0b82be;
 }
 
-/* line 162, style.scss */
+/* line 178, style.scss */
 .wells:nth-of-type(3) {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
   background: #4882a6;
 }
+@media (min-width: 601px) {
+  /* line 178, style.scss */
+  .wells:nth-of-type(3) {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
 
-/* line 167, style.scss */
+/* line 185, style.scss */
 .wells:hover {
   background-color: #c92220;
   cursor: pointer;
 }
 
-/* line 172, style.scss */
+/* line 190, style.scss */
 .texts {
   width: 83.05085%;
   float: left;
   margin-right: 1.69492%;
   padding-top: 5.26316%;
-  padding-bottom: 5.26316%;
+  /* padding-bottom: gutter(4);*/
 }
 
-/* line 178, style.scss */
+/* line 196, style.scss */
 .imag {
   width: 15.25424%;
   float: right;
   margin-right: 0;
 }
 
-/* line 182, style.scss */
+/* line 200, style.scss */
 .wells img {
   float: right;
   margin-left: 20px;
@@ -254,12 +285,15 @@ h2 {
   margin-bottom: 0;
 }
 
-/* line 190, style.scss */
+/* line 208, style.scss */
 .inwell {
-  padding: 5.26316%;
+  padding: 0 5.26316%;
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-/* line 194, style.scss */
+/* line 215, style.scss */
 h3 {
   width: 83.05085%;
   float: left;
@@ -272,7 +306,7 @@ h3 {
   font-weight: 500;
 }
 
-/* line 204, style.scss */
+/* line 225, style.scss */
 h5 {
   color: #555;
   font-size: 24px;
@@ -284,7 +318,7 @@ h5 {
   width: 100%;
 }
 
-/* line 215, style.scss */
+/* line 236, style.scss */
 h6 {
   color: #333;
   font-size: 16px;
@@ -296,13 +330,53 @@ h6 {
   width: 100%;
 }
 
-/* line 225, style.scss */
+/* line 247, style.scss */
 .allproducts {
   margin-top: 1.69492%;
   float: left;
 }
 
-/* line 229, style.scss */
+/* line 252, style.scss */
+.wq {
+  padding: 0;
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*
+.wells {
+  @include span(4);
+  color: #fff;
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #777;
+  display: table;
+
+  @include susy-media(max-width 600px) {
+    @include span(12);
+    padding-top: gutter(4);
+    padding-bottom: gutter(4);
+  }
+  @include susy-media(601px 750px) {
+    height: 300px;
+  }
+  @include susy-media(751px 850px) {
+    height: 260px;
+  }
+  @include susy-media(851px 1039px) {
+    height: 220px;
+  }
+  @include susy-media(1040px) {
+    height: 190px;
+  }
+}
+*/
+/* line 294, style.scss */
 .wellsProd {
   width: 32.20339%;
   float: left;
@@ -311,37 +385,82 @@ h6 {
   color: #000;
   font-size: 15px;
   font-weight: normal;
-  min-height: 140px;
-  padding: 20px 5px 10px;
+  display: table;
   margin-bottom: 1px;
 }
-
-/* line 240, style.scss */
-.wellsProd:nth-last-child(1) {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
+@media (max-width: 600px) {
+  /* line 294, style.scss */
+  .wellsProd {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5.26316% 5.26316% 5.26316% 1.69492%;
+  }
+}
+@media (min-width: 601px) and (max-width: 750px) {
+  /* line 294, style.scss */
+  .wellsProd {
+    height: 260px;
+  }
+}
+@media (min-width: 751px) and (max-width: 850px) {
+  /* line 294, style.scss */
+  .wellsProd {
+    height: 220px;
+  }
+}
+@media (min-width: 851px) and (max-width: 1039px) {
+  /* line 294, style.scss */
+  .wellsProd {
+    height: 200px;
+  }
+}
+@media (min-width: 1040px) {
+  /* line 294, style.scss */
+  .wellsProd {
+    height: 150px;
+    padding-left: 0.84034%;
+    padding-right: 1.69492%;
+  }
 }
 
-/* line 243, style.scss */
-.wellsProd:nth-last-child(4) {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
+@media (min-width: 601px) {
+  /* line 323, style.scss */
+  .wellsProd:nth-last-child(1) {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
 }
 
-/* line 247, style.scss */
+@media (min-width: 601px) {
+  /* line 329, style.scss */
+  .wellsProd:nth-last-child(4) {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 335, style.scss */
 .wellsProd:hover {
   background: #bdd7ee;
   cursor: pointer;
 }
 
-/* line 251, style.scss */
+/* line 340, style.scss */
 .wellsProd i {
   margin-top: 30px;
 }
+@media (min-width: 601px) and (max-width: 1039px) {
+  /* line 340, style.scss */
+  .wellsProd i {
+    margin-top: 0;
+  }
+}
 
-/* line 257, style.scss */
+/* line 348, style.scss */
 .icont {
   width: 23.72881%;
   float: left;
@@ -349,8 +468,17 @@ h6 {
   padding: 0;
   text-align: center;
 }
+@media (min-width: 601px) and (max-width: 1039px) {
+  /* line 348, style.scss */
+  .icont {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
-/* line 262, style.scss */
+/* line 357, style.scss */
 h4 {
   color: #333;
   font-size: 20px;
@@ -358,21 +486,39 @@ h4 {
   line-height: 26px;
   margin: 0 0 10px 0;
   padding: 0;
-  padding-right: 5.26316%;
   float: left;
   width: 100%;
   width: 74.57627%;
   float: right;
   margin-right: 0;
 }
+@media (min-width: 601px) and (max-width: 1039px) {
+  /* line 357, style.scss */
+  h4 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3.44828% 5.26316% 0 5.26316%;
+    text-align: center;
+  }
+}
 
-/* line 275, style.scss */
+/* line 375, style.scss */
 .wellsProd span {
+  padding: 0;
   width: 74.57627%;
   float: right;
   margin-right: 0;
-  padding: 0 5.26316% 3.44828% 0;
-  /*	@include susy-media(max-width 1050px){
-  		@include span(8 at 5);
-  	}*/
+}
+@media (min-width: 601px) and (max-width: 1039px) {
+  /* line 375, style.scss */
+  .wellsProd span {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 5.26316%;
+    text-align: center;
+  }
 }
