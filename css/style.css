@@ -37,21 +37,21 @@ body {
 }
 
 /* line 34, style.scss */
-.topwr {
+.topwr, .ft {
   max-width: 1546px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.69492%;
 }
 /* line 12, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/susy-2.2.7/sass/susy/output/support/_clearfix.scss */
-.topwr:after {
+.topwr:after, .ft:after {
   content: " ";
   display: block;
   clear: both;
 }
 @media (max-width: 600px) {
   /* line 34, style.scss */
-  .topwr {
+  .topwr, .ft {
     padding: 0 3.44828%;
   }
 }
@@ -64,28 +64,77 @@ body {
   padding: 10px 0 0 0;
   float: left;
 }
+@media (max-width: 778px) {
+  /* line 42, style.scss */
+  .logo {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
 
-/* line 48, style.scss */
+/* line 52, style.scss */
 .logo a {
   float: left;
   max-width: 204px;
 }
+@media (max-width: 1040px) {
+  /* line 52, style.scss */
+  .logo a {
+    padding-top: 4px;
+    max-width: 170px;
+  }
+}
+@media (max-width: 778px) {
+  /* line 52, style.scss */
+  .logo a {
+    max-width: 190px;
+  }
+}
 
-/* line 53, style.scss */
+/* line 64, style.scss */
 .menus {
   width: 66.10169%;
   float: left;
   margin-right: 1.69492%;
-  padding: 15px 0 0 0;
+  padding: 17px 0 0 0;
 }
-@media (max-width: 870px) {
-  /* line 53, style.scss */
+@media (max-width: 778px) {
+  /* line 64, style.scss */
   .menus {
     display: none;
   }
 }
 
-/* line 61, style.scss */
+/* line 72, style.scss */
+.menus2 {
+  display: none;
+}
+@media (max-width: 778px) {
+  /* line 72, style.scss */
+  .menus2 {
+    display: block;
+    height: 20px;
+    padding-top: 23px;
+    width: 15.25424%;
+    float: right;
+    margin-right: 0;
+    text-align: right;
+  }
+}
+
+/* line 82, style.scss */
+.menus2 i {
+  color: #333;
+}
+
+/* line 85, style.scss */
+.menus2 i:hover {
+  color: #c92220;
+  cursor: pointer;
+}
+
+/* line 89, style.scss */
 .menus a {
   color: #2f3030;
   font-size: 14px;
@@ -95,8 +144,14 @@ body {
   text-transform: uppercase;
   float: left;
 }
+@media (max-width: 870px) {
+  /* line 89, style.scss */
+  .menus a {
+    padding: 10px;
+  }
+}
 
-/* line 71, style.scss */
+/* line 102, style.scss */
 .menus a:hover {
   color: #000;
   text-decoration: none;
@@ -105,7 +160,7 @@ body {
   text-shadow: 1px 1px 1px #fff !important;
 }
 
-/* line 79, style.scss */
+/* line 110, style.scss */
 a.active {
   background-color: #c92220;
   background-image: linear-gradient(to bottom, #ec4947, #c92220);
@@ -116,7 +171,7 @@ a.active {
   text-shadow: 1px 1px 1px #600100;
 }
 
-/* line 89, style.scss */
+/* line 120, style.scss */
 .all {
   max-width: 1546px;
   margin-left: auto;
@@ -131,37 +186,63 @@ a.active {
   clear: both;
 }
 @media (max-width: 600px) {
-  /* line 89, style.scss */
+  /* line 120, style.scss */
   .all {
     padding: 0 3.44828%;
   }
 }
 
-/* line 99, style.scss */
+/* line 130, style.scss */
 a.lb {
-  width: 6.77966%;
-  float: right;
-  margin-right: 0;
   color: #333;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   float: left;
-  padding: 25px 0 0 0;
+  padding: 27px 0 0 0;
   text-decoration: none;
+  width: 6.77966%;
+  float: right;
+  margin-right: 0;
+}
+@media (max-width: 778px) {
+  /* line 130, style.scss */
+  a.lb {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 360px) {
+  /* line 130, style.scss */
+  a.lb {
+    font-size: 15px;
+  }
 }
 
-/* line 111, style.scss */
+/* line 149, style.scss */
 a.lb:hover {
   color: #c92220;
 }
 
-/* line 116, style.scss */
+/* line 154, style.scss */
+.fltr {
+  float: right;
+}
+
+/* line 158, style.scss */
 a.lb img {
   margin: -3px 5px 0 0;
 }
+@media (max-width: 778px) {
+  /* line 158, style.scss */
+  a.lb img {
+    margin: -1px 5px 0 0;
+  }
+}
 
-/* line 120, style.scss */
+/* line 165, style.scss */
 h1 {
   font-size: 29px;
   line-height: 32px;
@@ -172,7 +253,7 @@ h1 {
   width: 100%;
 }
 
-/* line 131, style.scss */
+/* line 176, style.scss */
 h2 {
   color: #444;
   font-family: "Open Sans";
@@ -185,7 +266,7 @@ h2 {
   width: 100%;
 }
 
-/* line 143, style.scss */
+/* line 188, style.scss */
 .wells {
   width: 32.20339%;
   float: left;
@@ -201,7 +282,7 @@ h2 {
   display: table;
 }
 @media (max-width: 600px) {
-  /* line 143, style.scss */
+  /* line 188, style.scss */
   .wells {
     width: 100%;
     float: left;
@@ -212,41 +293,41 @@ h2 {
   }
 }
 @media (min-width: 601px) and (max-width: 750px) {
-  /* line 143, style.scss */
+  /* line 188, style.scss */
   .wells {
     height: 300px;
   }
 }
 @media (min-width: 751px) and (max-width: 850px) {
-  /* line 143, style.scss */
+  /* line 188, style.scss */
   .wells {
     height: 260px;
   }
 }
 @media (min-width: 851px) and (max-width: 1039px) {
-  /* line 143, style.scss */
+  /* line 188, style.scss */
   .wells {
     height: 220px;
   }
 }
 @media (min-width: 1040px) {
-  /* line 143, style.scss */
+  /* line 188, style.scss */
   .wells {
     height: 190px;
   }
 }
 
-/* line 174, style.scss */
+/* line 219, style.scss */
 .wells:nth-of-type(2) {
   background: #0b82be;
 }
 
-/* line 178, style.scss */
+/* line 223, style.scss */
 .wells:nth-of-type(3) {
   background: #4882a6;
 }
 @media (min-width: 601px) {
-  /* line 178, style.scss */
+  /* line 223, style.scss */
   .wells:nth-of-type(3) {
     width: 32.20339%;
     float: right;
@@ -254,13 +335,13 @@ h2 {
   }
 }
 
-/* line 185, style.scss */
+/* line 230, style.scss */
 .wells:hover {
   background-color: #c92220;
   cursor: pointer;
 }
 
-/* line 190, style.scss */
+/* line 235, style.scss */
 .texts {
   width: 83.05085%;
   float: left;
@@ -269,14 +350,14 @@ h2 {
   /* padding-bottom: gutter(4);*/
 }
 
-/* line 196, style.scss */
+/* line 241, style.scss */
 .imag {
   width: 15.25424%;
   float: right;
   margin-right: 0;
 }
 
-/* line 200, style.scss */
+/* line 245, style.scss */
 .wells img {
   float: right;
   margin-left: 20px;
@@ -285,7 +366,7 @@ h2 {
   margin-bottom: 0;
 }
 
-/* line 208, style.scss */
+/* line 253, style.scss */
 .inwell {
   padding: 0 5.26316%;
   float: none;
@@ -293,7 +374,7 @@ h2 {
   vertical-align: middle;
 }
 
-/* line 215, style.scss */
+/* line 260, style.scss */
 h3 {
   width: 83.05085%;
   float: left;
@@ -306,7 +387,7 @@ h3 {
   font-weight: 500;
 }
 
-/* line 225, style.scss */
+/* line 270, style.scss */
 h5 {
   color: #555;
   font-size: 24px;
@@ -318,7 +399,7 @@ h5 {
   width: 100%;
 }
 
-/* line 236, style.scss */
+/* line 281, style.scss */
 h6 {
   color: #333;
   font-size: 16px;
@@ -330,13 +411,13 @@ h6 {
   width: 100%;
 }
 
-/* line 247, style.scss */
+/* line 292, style.scss */
 .allproducts {
   margin-top: 1.69492%;
   float: left;
 }
 
-/* line 252, style.scss */
+/* line 297, style.scss */
 .wq {
   padding: 0;
   float: none;
@@ -344,39 +425,7 @@ h6 {
   vertical-align: middle;
 }
 
-/*
-.wells {
-  @include span(4);
-  color: #fff;
-  float: left;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  padding: 0;
-  margin-bottom: 1px;
-  background-color: #777;
-  display: table;
-
-  @include susy-media(max-width 600px) {
-    @include span(12);
-    padding-top: gutter(4);
-    padding-bottom: gutter(4);
-  }
-  @include susy-media(601px 750px) {
-    height: 300px;
-  }
-  @include susy-media(751px 850px) {
-    height: 260px;
-  }
-  @include susy-media(851px 1039px) {
-    height: 220px;
-  }
-  @include susy-media(1040px) {
-    height: 190px;
-  }
-}
-*/
-/* line 294, style.scss */
+/* line 304, style.scss */
 .wellsProd {
   width: 32.20339%;
   float: left;
@@ -389,7 +438,7 @@ h6 {
   margin-bottom: 1px;
 }
 @media (max-width: 600px) {
-  /* line 294, style.scss */
+  /* line 304, style.scss */
   .wellsProd {
     width: 100%;
     float: left;
@@ -399,25 +448,25 @@ h6 {
   }
 }
 @media (min-width: 601px) and (max-width: 750px) {
-  /* line 294, style.scss */
+  /* line 304, style.scss */
   .wellsProd {
     height: 260px;
   }
 }
 @media (min-width: 751px) and (max-width: 850px) {
-  /* line 294, style.scss */
+  /* line 304, style.scss */
   .wellsProd {
     height: 220px;
   }
 }
 @media (min-width: 851px) and (max-width: 1039px) {
-  /* line 294, style.scss */
+  /* line 304, style.scss */
   .wellsProd {
     height: 200px;
   }
 }
 @media (min-width: 1040px) {
-  /* line 294, style.scss */
+  /* line 304, style.scss */
   .wellsProd {
     height: 150px;
     padding-left: 0.84034%;
@@ -426,7 +475,7 @@ h6 {
 }
 
 @media (min-width: 601px) {
-  /* line 323, style.scss */
+  /* line 333, style.scss */
   .wellsProd:nth-last-child(1) {
     width: 32.20339%;
     float: right;
@@ -435,7 +484,7 @@ h6 {
 }
 
 @media (min-width: 601px) {
-  /* line 329, style.scss */
+  /* line 339, style.scss */
   .wellsProd:nth-last-child(4) {
     width: 32.20339%;
     float: right;
@@ -443,24 +492,24 @@ h6 {
   }
 }
 
-/* line 335, style.scss */
+/* line 345, style.scss */
 .wellsProd:hover {
   background: #bdd7ee;
   cursor: pointer;
 }
 
-/* line 340, style.scss */
+/* line 350, style.scss */
 .wellsProd i {
   margin-top: 30px;
 }
 @media (min-width: 601px) and (max-width: 1039px) {
-  /* line 340, style.scss */
+  /* line 350, style.scss */
   .wellsProd i {
     margin-top: 0;
   }
 }
 
-/* line 348, style.scss */
+/* line 358, style.scss */
 .icont {
   width: 23.72881%;
   float: left;
@@ -469,7 +518,7 @@ h6 {
   text-align: center;
 }
 @media (min-width: 601px) and (max-width: 1039px) {
-  /* line 348, style.scss */
+  /* line 358, style.scss */
   .icont {
     width: 100%;
     float: left;
@@ -478,7 +527,7 @@ h6 {
   }
 }
 
-/* line 357, style.scss */
+/* line 367, style.scss */
 h4 {
   color: #333;
   font-size: 20px;
@@ -493,7 +542,7 @@ h4 {
   margin-right: 0;
 }
 @media (min-width: 601px) and (max-width: 1039px) {
-  /* line 357, style.scss */
+  /* line 367, style.scss */
   h4 {
     width: 100%;
     float: left;
@@ -504,7 +553,7 @@ h4 {
   }
 }
 
-/* line 375, style.scss */
+/* line 385, style.scss */
 .wellsProd span {
   padding: 0;
   width: 74.57627%;
@@ -512,7 +561,7 @@ h4 {
   margin-right: 0;
 }
 @media (min-width: 601px) and (max-width: 1039px) {
-  /* line 375, style.scss */
+  /* line 385, style.scss */
   .wellsProd span {
     width: 100%;
     float: left;
@@ -521,4 +570,201 @@ h4 {
     padding: 0 5.26316%;
     text-align: center;
   }
+}
+
+/* line 395, style.scss */
+.josr {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  padding-top: 1.69492%;
+  padding-bottom: 1.69492%;
+}
+@media (max-width: 750px) {
+  /* line 395, style.scss */
+  .josr {
+    width: 93.33333%;
+    float: left;
+    margin-left: 3.33333%;
+    margin-right: 3.33333%;
+    padding: 6.77966% 0;
+  }
+}
+
+@media (max-width: 750px) {
+  /* line 406, style.scss */
+  .josr:nth-last-of-type(2) {
+    border-top: 1px dashed #ccc;
+  }
+}
+
+/* line 412, style.scss */
+.josr:nth-last-of-type(1) {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+}
+@media (max-width: 750px) {
+  /* line 412, style.scss */
+  .josr:nth-last-of-type(1) {
+    width: 93.33333%;
+    float: left;
+    margin-left: 3.33333%;
+    margin-right: 3.33333%;
+    padding-top: 1.69492%;
+  }
+}
+
+/* line 421, style.scss */
+a.josl {
+  color: #c92220;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 20px 0 0 0;
+  float: left;
+}
+
+/* line 429, style.scss */
+a.josl:hover {
+  color: #841e5f;
+}
+
+/* line 433, style.scss */
+a.josl i {
+  margin: 3px 15px 0 0;
+}
+
+/* line 437, style.scss */
+ul.uln {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 442, style.scss */
+.uln li {
+  list-style: outside none none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 450, style.scss */
+.uln li i {
+  margin: 4px 15px 0 0;
+  color: #841e5f;
+  float: left;
+  clear: both;
+}
+
+/* line 457, style.scss */
+.uln li:nth-of-type(3) i {
+  margin-bottom: 5px;
+}
+
+/* line 461, style.scss */
+.foot {
+  width: 100%;
+  background: #373737;
+  padding: 0.84034% 0;
+  float: left;
+}
+@media (max-width: 1040px) {
+  /* line 461, style.scss */
+  .foot {
+    padding: 1.69492% 0;
+  }
+}
+/* line 469, style.scss */
+.foot a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+}
+@media (max-width: 600px) {
+  /* line 469, style.scss */
+  .foot a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px) {
+  /* line 469, style.scss */
+  .foot a {
+    font-size: 11px;
+  }
+}
+@media (max-width: 465px) {
+  /* line 469, style.scss */
+  .foot a {
+    font-size: 10px;
+  }
+}
+/* line 484, style.scss */
+.foot a:hover {
+  color: #ed9e3e;
+}
+
+@media (max-width: 600px) {
+  /* line 489, style.scss */
+  .ft {
+    padding: 0;
+  }
+}
+
+/* line 496, style.scss */
+.col {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 750px) {
+  /* line 496, style.scss */
+  .col {
+    width: 17.35537%;
+    float: left;
+    margin-left: 0.41322%;
+    margin-right: 0.41322%;
+    text-align: center;
+  }
+}
+
+/* line 504, style.scss */
+.col:nth-of-type(4) {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 750px) {
+  /* line 504, style.scss */
+  .col:nth-of-type(4) {
+    width: 26.44628%;
+    float: left;
+    margin-left: 0.41322%;
+    margin-right: 0.41322%;
+  }
+}
+
+/* line 511, style.scss */
+.col:nth-last-child(1) {
+  width: 6.77966%;
+  float: right;
+  margin-right: 0;
+}
+@media (max-width: 750px) {
+  /* line 511, style.scss */
+  .col:nth-last-child(1) {
+    display: none;
+  }
+}
+
+/* line 518, style.scss */
+.foot2 {
+  width: 100%;
+  background: #000;
+  padding: 10px 0;
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  color: #aeaaaa;
 }

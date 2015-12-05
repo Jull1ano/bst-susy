@@ -43,21 +43,49 @@ body {
   @include span(3);
   padding: 10px 0 0 0;
   float: left;
+  @include susy-media(max-width 778px) {
+    @include span(8);
+  }
+
 }
 
 .logo a {
   float: left;
   max-width: 204px;
+  @include susy-media(max-width 1040px) {
+    padding-top: 4px;
+    max-width: 170px;
+  }
+  @include susy-media(max-width 778px) {
+    max-width: 190px;
+  }
 }
 
 .menus {
   @include span(8);
-  padding: 15px 0 0 0;
-  @media (max-width: 870px) {
+  padding: 17px 0 0 0;
+  @include susy-media(max-width 778px) {
     display: none;
   }
 }
 
+.menus2 {
+  display: none;
+  @include susy-media(max-width 778px) {
+    display: block;
+    height: 20px;
+    padding-top: 23px;
+    @include span(2 last);
+    text-align: right;
+  }
+}
+.menus2 i {
+  color: #333;
+}
+.menus2 i:hover {
+  color: $ros;
+  cursor: pointer;
+}
 .menus a {
   color: #2f3030;
   font-size: 14px;
@@ -66,6 +94,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   float: left;
+  @include susy-media(max-width 870px) {
+    padding: 10px;
+  }
 }
 
 .menus a:hover {
@@ -97,14 +128,21 @@ a.active {
 }
 
 a.lb {
-  @include span(1 last);
   color: #333;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   float: left;
-  padding: 25px 0 0 0;
+  padding: 27px 0 0 0;
   text-decoration: none;
+  @include span(1 last);
+  @include susy-media(max-width 778px) {
+    @include span(2);
+    font-size: 18px;
+  }
+  @include susy-media(max-width 360px) {
+    font-size: 15px;
+  }
 
 }
 
@@ -113,8 +151,15 @@ a.lb:hover {
 
 }
 
+.fltr {
+  float: right;
+}
+
 a.lb img {
   margin: -3px 5px 0 0;
+  @include susy-media(max-width 778px) {
+    margin: -1px 5px 0 0;
+  }
 }
 
 h1 {
@@ -256,41 +301,6 @@ h6 {
   vertical-align: middle;
 }
 
-
-/*
-.wells {
-  @include span(4);
-  color: #fff;
-  float: left;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
-  padding: 0;
-  margin-bottom: 1px;
-  background-color: #777;
-  display: table;
-
-  @include susy-media(max-width 600px) {
-    @include span(12);
-    padding-top: gutter(4);
-    padding-bottom: gutter(4);
-  }
-  @include susy-media(601px 750px) {
-    height: 300px;
-  }
-  @include susy-media(751px 850px) {
-    height: 260px;
-  }
-  @include susy-media(851px 1039px) {
-    height: 220px;
-  }
-  @include susy-media(1040px) {
-    height: 190px;
-  }
-}
-*/
-
-
 .wellsProd {
   @include span(4);
   background-color: #efedee;
@@ -315,8 +325,8 @@ h6 {
   }
   @include susy-media(1040px) {
     height: 150px;
-    padding-left:gutter(24);
-    padding-right:gutter();
+    padding-left: gutter(24);
+    padding-right: gutter();
   }
 }
 
@@ -340,7 +350,7 @@ h6 {
 .wellsProd i {
   margin-top: 30px;
   @include susy-media(601px 1039px) {
-    margin-top:0;
+    margin-top: 0;
   }
 
 }
@@ -366,7 +376,7 @@ h4 {
   @include span(9 at 4);
   @include susy-media(601px 1039px) {
     @include span(12);
-    padding:gutter(6) gutter(4) 0 gutter(4);
+    padding: gutter(6) gutter(4) 0 gutter(4);
     text-align: center;
   }
 
@@ -377,7 +387,140 @@ h4 {
   @include span(9 at 4);
   @include susy-media(601px 1039px) {
     @include span(12);
-    padding:0 gutter(4);
+    padding: 0 gutter(4);
     text-align: center;
   }
+}
+
+.josr {
+  @include span(4);
+  padding-top: gutter();
+  padding-bottom: gutter();
+
+  @include susy-media(max-width 750px) {
+    @include span(3 of 3 split);
+    padding: span(1) 0;
+  }
+}
+
+.josr:nth-last-of-type(2) {
+  @include susy-media(max-width 750px) {
+    border-top: 1px dashed #ccc;
+  }
+}
+
+.josr:nth-last-of-type(1) {
+  @include span(4 last);
+
+  @include susy-media(max-width 750px) {
+    @include span(3 of 3 split);
+    padding-top: gutter();
+  }
+}
+
+a.josl {
+  color: $ros;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 20px 0 0 0;
+  float: left;
+}
+
+a.josl:hover {
+  color: $ov;
+}
+
+a.josl i {
+  margin: 3px 15px 0 0;
+}
+
+ul.uln {
+  padding: 0;
+  margin: 0;
+}
+
+.uln li {
+  list-style: outside none none;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+
+.uln li i {
+  margin: 4px 15px 0 0;
+  color: $ov;
+  float: left;
+  clear: both;
+}
+
+.uln li:nth-of-type(3) i {
+  margin-bottom: 5px;
+}
+
+.foot {
+  width: 100%;
+  background: #373737;
+  padding: gutter(24) 0;
+  float: left;
+  @include susy-media(max-width 1040px) {
+    padding: gutter() 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    @include susy-media(max-width 600px) {
+      font-size: 12px;
+    }
+    @include susy-media(max-width 520px) {
+      font-size: 11px;
+    }
+    @include susy-media(max-width 465px) {
+      font-size: 10px;
+    }
+  }
+  a:hover {
+    color: #ed9e3e;
+  }
+}
+
+.ft {
+  @extend .topwr;
+  @include susy-media(max-width 600px) {
+    padding: 0;
+  }
+}
+
+.col {
+  @include span(2);
+  @include susy-media(max-width 750px) {
+    @include span(2 of 11 .1 split);
+    text-align: center;
+  }
+}
+
+.col:nth-of-type(4) {
+  @include span(3);
+  @include susy-media(max-width 750px) {
+    @include span(3 of 11 .1 split);
+  }
+}
+
+.col:nth-last-child(1) {
+  @include span(1 last);
+  @include susy-media(max-width 750px) {
+    display: none;
+  }
+}
+
+.foot2 {
+  width: 100%;
+  background: #000;
+  padding: 10px 0;
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  color: #aeaaaa;
 }
